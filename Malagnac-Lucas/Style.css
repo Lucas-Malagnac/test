@@ -1,0 +1,341 @@
+*, 
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+	background-color:rgb(224, 224, 224);
+}
+header{
+	background-color:rgb(84, 168, 216);
+	height: 14.5em;
+}
+
+img.masque{
+vertical-align: middle;/*mettre le texte au milieu a droite de l'image*/
+}
+
+.position_recherche{
+	display: block;
+	float: right;
+	padding: 10px 10px 10px;
+	
+}
+
+.recherche{
+	border-radius:40px;
+	outline: 0;/*encadre bleu retirer*/
+	width: 8.5rem;
+	height: 1.5rem;
+	background:url(image/loupe.png) right no-repeat;
+	background-color: white;
+	padding:  10px;
+	border:solid #565656 2px ;
+}
+/*MENU DEROULANT*/
+nav{
+	 display: block;
+}
+.menu, .menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.menu {
+    /*text-align: center;/* on centre le menu */
+    float: right;
+}
+.menu li {
+/* on place les liens du menu horizontalement */
+    display: inline-block;
+    background: rgb(67, 161, 216);
+    height: 2em;
+    width: 9em;
+    border-left-style: groove;
+}
+.menu li:hover{
+	background-color:rgb(35, 147, 211); 
+}
+.menu ul li {
+/* annulation de se comportement pour les sous menu */
+    display: inherit;
+    text-align: center;
+}
+.menu a {
+    text-decoration: none;
+    display: block;
+	color:black;
+}
+.menu ul {
+    position: absolute;
+    left: -999em;/* on cache les sous menus complètement sur la gauche */
+    text-align: left;/* on cache les sous menus complètement sur la gauche */
+
+}
+.menu li:hover ul {
+/* les li se replace dessous le menu au passage de la souris */
+    left: auto;
+}
+
+a{
+	font-family: Openlite;
+}
+/* finMENU DEROULANT*/
+
+hr{
+  border: 0; 
+  height: 1px; 
+  background-image: linear-gradient(to right, #c9c9c9, #000000, #000000, #c9c9c9);
+}
+/*POLICE ECRITURE*/
+
+@font-face{
+	font-family: "Openextra";
+	src:url("Open_Sans/OpenSans-ExtraBold.ttf");
+} 
+
+@font-face{
+	font-family: "Openlite";
+	src:url("Open_Sans/OpenSans-light.ttf");
+} 
+
+@font-face{
+	font-family: "Openregularitalic";
+	src:url("Open_Sans/OpenSans-Italic.ttf");
+}
+/*FIN POLICE ECRITURE*/
+
+h1{
+	font-family: "Openextra";
+}
+
+h2{
+	text-align: center;
+	font-family: "Openextra";
+}
+
+h3{
+	text-align: left;
+	font-family: "Openlite";
+	text-decoration: underline;
+}
+
+.listyle{
+	font-family: Openregularitalic;
+	font-size: 15px;
+}
+
+p{
+	font-family: Openlite;
+}
+.conteneur
+{
+    display: flex;   	
+}
+
+.conteneur2{
+	display: flex;
+	flex-direction: column;
+	width: 100rem;
+}
+
+/*COTER GAUCHE*/
+.actu-gauche{
+
+	background-color:rgb(201, 207, 211);
+	width:400px;
+	height:800px;	
+	padding: 1em;
+	margin: 0.7em 0.5em 0.5em 0.5em;/* haut | droit | bas | gauche */
+	border-radius: 10px;
+}
+
+.envoyer{
+	display: block;
+	width: 6em;
+	margin: auto;
+	padding: auto;
+	background-color: gray;
+	color: white;
+	height: 2em;
+
+}
+
+.login{
+	text-align: center;
+	font-family: Openlite;
+
+}
+
+.Identifiant{
+	display: block;
+	height: 20px;
+	width: 10em;
+	margin: auto;
+	padding: auto;
+	
+}
+
+.password{
+	display: block;
+	height: 20px;
+	width: 10em;
+	margin: auto;
+	padding: auto;
+	
+}
+
+/*FIN COTER GAUCHE*/
+
+/*CASE 1*/
+.case1{
+	display: flex;
+	justify-content: space-around;
+	background-color: rgb(177, 222, 249);
+	height: 25em;
+	margin:0.4em 0.9em 0.2em 0.2em;/* haut | droit | bas | gauche */
+	padding: 0.2em;
+    box-shadow: 1px 1px 1px black,
+                        2px 2px 1px black,
+                        3px 3px 1px rgb(99, 168, 211), 
+                        4px 4px 1px rgb(99, 168, 211), 
+                        5px 5px 1px black,
+                        6px 6px 1px black; 
+}
+
+.titanic{
+	width:237px;
+	display: block;
+}
+
+.titreresume{
+	font-size:  10px; 
+}
+.resume	{
+	display: block;
+	width: 700px;
+	background-color:rgb(201, 207, 211);
+	/* haut | droit | bas | gauche */
+	padding: 0em 0.5em 0em 1.2em;/* haut | droit | bas | gauche */
+	font-size: 16px;
+	overflow: scroll;
+}
+.liste1{
+	display: block;
+	width: 400px;
+	padding: 0.2em;
+}
+
+/*FIN CASE 1*/
+
+/*CASE 2*/
+.case2{
+	display: flex;
+	justify-content: space-around;
+	background-color: rgb(177, 222, 249);
+	height: 25em;
+	margin:0.4em 0.9em 0.2em 0.2em;/* haut | droit | bas | gauche */
+	padding: 0.2em;
+    box-shadow: 1px 1px 1px black,
+                        2px 2px 1px black,
+                        3px 3px 1px rgb(99, 168, 211), 
+                        4px 4px 1px rgb(99, 168, 211), 
+                        5px 5px 1px black,
+                        6px 6px 1px black;
+
+}
+
+.avatar{
+	width:237px;
+	display: block;
+
+}
+
+.liste2{
+	display: block;
+	width: 400px;
+	padding: 0.2em;
+}
+
+.resume1	{
+	display: block;
+	width: 700px;
+	background-color:rgb(201, 207, 211);
+	padding: 0em 0.5em 0em 1.2em;/* haut | droit | bas | gauche */
+	font-size: 16px;
+	overflow: scroll;
+}
+
+/*FIN CASE2*/
+
+/*LEGENDE*/
+figcaption {
+    background-color:rgb(130, 130, 130);
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+} 
+
+li{
+	list-style: none;
+}
+
+/*FIN LEGENDE*/
+
+/*FOOTER*/
+.footer1{
+	background-color:rgb(84, 168, 216);
+	display: flex;
+	height: 20em;
+	justify-content: space-around;
+	margin: 0.5em 0em 0em 0em;
+
+}
+
+.boite1{
+	display: block;
+	background-color: rgb(84, 168, 216);
+	width: 35em;
+	margin: 0.5em 0em 0.5em 0em;
+}
+
+.boite2{
+	display: block;
+	background-color:rgb(84, 168, 216);
+	width: 35em;	
+	margin: 9em 0em 0.5em -3em;
+}
+
+.boite3{
+	display: block;
+	background-color:rgb(84, 168, 216);
+	width: 35em;
+	margin: 0.5em 0em 0.5em 0em;
+	text-align: center;
+}
+.titremasquefooter{
+	font-family:Openlite;
+}
+.masquefooter{
+	width: 100px;
+	vertical-align: middle;
+}
+.titrelogofooter{
+	text-align: center;
+	text-decoration: none;
+}
+.titrefooter{
+	font-family: Openextra;
+}
+
+a{
+	color: rgb(0, 0, 0);
+}
+a:hover{
+	color:white;
+}
+/*FIN font-language-override: */
